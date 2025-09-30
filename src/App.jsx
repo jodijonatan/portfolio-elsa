@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Karya from "./components/Karya";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       </section>
       <section id="contact">
         <Contact />
+      </section>
+      <section id="footer">
+        <Footer />
       </section>
     </div>
   );
