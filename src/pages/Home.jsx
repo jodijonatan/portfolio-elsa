@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 function Home() {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-pink-100 to-white px-6">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-pink-100 via-white to-pink-100 px-6">
       {/* Hero Section */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}

@@ -2,7 +2,7 @@ import React from "react";
 
 // Komponen Card atau Section yang Lebih Menarik
 const AboutCard = ({ icon, title, description }) => (
-  <div className="p-6 md:p-8 bg-white border border-pink-100 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+  <div className="p-6 md:p-8 bg-white border border-pink-100 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
     <div className="text-3xl text-pink-500 mb-4">{icon}</div>
     <h3 className="text-xl font-semibold text-pink-700 mb-2">{title}</h3>
     <p className="text-gray-600">{description}</p>
@@ -12,7 +12,7 @@ const AboutCard = ({ icon, title, description }) => (
 function About() {
   return (
     // Kontainer Utama: Background putih/sedikit pink muda untuk kontras yang elegan
-    <div className="min-h-screen flex flex-col items-center pt-20 pb-12 bg-gray-50">
+    <div className="min-h-screen flex flex-col items-center pt-20 pb-12 bg-white">
       {/* Header Utama */}
       <header className="text-center mb-12 px-4">
         <h1 className="text-5xl md:text-6xl font-extrabold text-pink-600 tracking-tight mb-4">
@@ -27,21 +27,35 @@ function About() {
       {/* Konten Utama - Penekanan pada Profesionalitas */}
       <section className="max-w-6xl mx-auto px-6">
         {/* Ringkasan Profil */}
-        <div className="p-8 md:p-12 bg-white rounded-2xl shadow-xl mb-12 border-t-4 border-pink-500">
+        <div className="p-8 md:p-12 bg-white rounded-2xl shadow-md mb-12 border-t-4 border-pink-500">
           <h2 className="text-3xl font-bold text-pink-700 mb-4">
             Profil Singkat
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed md:text-xl">
-            Saya adalah seorang **Pengembang Web (Web Developer)** yang
-            bersemangat, saat ini menempuh pendidikan di **SMK Jurusan Rekayasa
-            Perangkat Lunak (RPL)**. Fokus utama saya adalah di **Frontend
-            Development**, dengan keahlian mendalam pada ekosistem **React** dan
-            desain antarmuka responsif menggunakan **Tailwind CSS**.
+            Saya adalah seorang{" "}
+            <span className="font-semibold text-pink-700">
+              Pengembang Web (Web Developer)
+            </span>{" "}
+            yang bersemangat, saat ini menempuh pendidikan di{" "}
+            <span className="font-semibold text-pink-700">
+              SMK Jurusan Rekayasa Perangkat Lunak (RPL)
+            </span>
+            . Fokus utama saya adalah di{" "}
+            <span className="font-semibold text-pink-700">
+              Frontend Development
+            </span>
+            , dengan keahlian mendalam pada ekosistem{" "}
+            <span className="font-semibold text-pink-700">React</span> dan
+            desain antarmuka responsif menggunakan{" "}
+            <span className="font-semibold text-pink-700">Tailwind CSS</span>.
           </p>
-          <p className="mt-4 text-lg text-gray-700 leading-relaxed italic">
+          <p className="mt-4 text-lg text-gray-500 leading-relaxed italic">
             "Saya percaya bahwa kode yang baik harus menghasilkan produk yang
-            tidak hanya berfungsi dengan sempurna, tetapi juga **menghadirkan
-            estetika dan interaksi yang memukau**."
+            tidak hanya berfungsi dengan sempurna, tetapi juga{" "}
+            <span className="text-pink-700">
+              menghadirkan estetika dan interaksi yang memukau
+            </span>
+            ."
           </p>
         </div>
 

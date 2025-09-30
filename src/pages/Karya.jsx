@@ -1,31 +1,34 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import karya1 from "../assets/karya1.jpg";
+import karya2 from "../assets/karya2.jpg";
+import karya3 from "../assets/karya3.jpg";
 
 function Karya() {
   const projects = [
     {
       title: "Portfolio Website",
       desc: "Website personal dengan React & Tailwind.",
-      img: "https://via.placeholder.com/400x250?text=Project+1",
+      img: karya1,
       link: "#",
     },
     {
       title: "Landing Page",
       desc: "Landing page startup modern.",
-      img: "https://via.placeholder.com/400x250?text=Project+2",
+      img: karya2,
       link: "#",
     },
     {
       title: "UI Design",
       desc: "Desain UI estetik dengan Figma.",
-      img: "https://via.placeholder.com/400x250?text=Project+3",
+      img: karya3,
       link: "#",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-pink-50 py-20 px-6">
+    <div className="min-h-screen bg-pink-100 py-20 px-6">
       {/* Heading */}
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
@@ -44,16 +47,16 @@ function Karya() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: i * 0.2 }}
-            className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all"
+            className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all"
           >
             {/* Image */}
             <div className="relative">
               <img
                 src={p.img}
                 alt={p.title}
-                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-48 object-cover transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-pink-600 bg-opacity-0 group-hover:bg-opacity-30 transition"></div>
+              <div className="absolute inset-0 group-hover:bg-opacity-30 transition"></div>
             </div>
 
             {/* Content */}

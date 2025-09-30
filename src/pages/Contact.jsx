@@ -4,7 +4,7 @@ import { Mail, User, MessageSquare } from "lucide-react";
 
 function Contact() {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center px-6 py-12 bg-gradient-to-b from-pink-50 to-white">
+    <div className="min-h-screen flex flex-col justify-center items-center px-6 py-12 bg-whtie">
       {/* Heading */}
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
