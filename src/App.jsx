@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Karya from "./pages/Karya";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import MusicList from "./pages/MusicList";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
       </section>
       <section id="karya">
         <Karya />
+      </section>
+      <section id="music">
+        <MusicList />
       </section>
       <section id="contact">
         <Contact />

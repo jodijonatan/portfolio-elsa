@@ -1,28 +1,28 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
-import karya1 from "../assets/karya1.jpg";
-import karya2 from "../assets/karya2.jpg";
-import karya3 from "../assets/karya3.jpg";
+import karya4 from "../assets/karya4.jpeg";
+import karya5 from "../assets/karya5.jpeg";
+import karya6 from "../assets/karya6.jpeg";
 
 function Karya() {
   const projects = [
     {
       title: "Portfolio Website",
       desc: "Website personal dengan React & Tailwind.",
-      img: karya1,
+      img: karya4,
       link: "#",
     },
     {
       title: "Landing Page",
       desc: "Landing page startup modern.",
-      img: karya2,
+      img: karya5,
       link: "#",
     },
     {
       title: "UI Design",
       desc: "Desain UI estetik dengan Figma.",
-      img: karya3,
+      img: karya6,
       link: "#",
     },
   ];

@@ -1,95 +1,95 @@
 import React from "react";
+import main from "../assets/main.jpeg";
 
-// Komponen Card atau Section yang Lebih Menarik
 const AboutCard = ({ icon, title, description }) => (
-  <div className="p-6 md:p-8 bg-white border border-pink-100 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
-    <div className="text-3xl text-pink-500 mb-4">{icon}</div>
-    <h3 className="text-xl font-semibold text-pink-700 mb-2">{title}</h3>
-    <p className="text-gray-600">{description}</p>
+  <div className="p-5 bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+    <div className="text-2xl mb-2">{icon}</div>
+    <h3 className="text-lg font-semibold text-gray-800 mb-1">{title}</h3>
+    <p className="text-gray-600 text-sm">{description}</p>
   </div>
 );
 
 function About() {
   return (
-    // Kontainer Utama: Background putih/sedikit pink muda untuk kontras yang elegan
-    <div className="min-h-screen flex flex-col items-center pt-20 pb-12 bg-white">
-      {/* Header Utama */}
-      <header className="text-center mb-12 px-4">
-        <h1 className="text-5xl md:text-6xl font-extrabold text-pink-600 tracking-tight mb-4">
-          Tentang Kami
+    <div className="min-h-screen flex flex-col items-center pt-16 pb-12 bg-gray-50">
+      {/* Header */}
+      <header className="text-center mb-10 px-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-3">
+          Tentang Saya
         </h1>
-        <p className="max-w-3xl mx-auto text-xl text-gray-700 font-light">
-          Menciptakan pengalaman digital yang indah dan fungsional.
+        <p className="max-w-2xl mx-auto text-gray-600 text-lg">
+          Membangun pengalaman membaca yang estetik, menarik, dan mendalam.
         </p>
-        <div className="w-20 h-1 bg-pink-400 mx-auto mt-4 rounded-full"></div>
       </header>
 
-      {/* Konten Utama - Penekanan pada Profesionalitas */}
-      <section className="max-w-6xl mx-auto px-6">
-        {/* Ringkasan Profil */}
-        <div className="p-8 md:p-12 bg-white rounded-2xl shadow-md mb-12 border-t-4 border-pink-500">
-          <h2 className="text-3xl font-bold text-pink-700 mb-4">
-            Profil Singkat
-          </h2>
-          <p className="text-lg text-gray-700 leading-relaxed md:text-xl">
-            Saya adalah seorang{" "}
-            <span className="font-semibold text-pink-700">
-              Pengembang Web (Web Developer)
-            </span>{" "}
-            yang bersemangat, saat ini menempuh pendidikan di{" "}
-            <span className="font-semibold text-pink-700">
-              SMK Jurusan Rekayasa Perangkat Lunak (RPL)
-            </span>
-            . Fokus utama saya adalah di{" "}
-            <span className="font-semibold text-pink-700">
-              Frontend Development
-            </span>
-            , dengan keahlian mendalam pada ekosistem{" "}
-            <span className="font-semibold text-pink-700">React</span> dan
-            desain antarmuka responsif menggunakan{" "}
-            <span className="font-semibold text-pink-700">Tailwind CSS</span>.
-          </p>
-          <p className="mt-4 text-lg text-gray-500 leading-relaxed italic">
-            "Saya percaya bahwa kode yang baik harus menghasilkan produk yang
-            tidak hanya berfungsi dengan sempurna, tetapi juga{" "}
-            <span className="text-pink-700">
-              menghadirkan estetika dan interaksi yang memukau
-            </span>
-            ."
-          </p>
+      {/* Profil */}
+      <section className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center mb-12">
+        {/* Foto */}
+        <div className="flex justify-center">
+          <div className="w-48 h-48 md:w-60 md:h-60 rounded-2xl overflow-hidden shadow-md border border-gray-200">
+            <img
+              src={main}
+              alt="Foto Profil"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
 
-        {/* Keunggulan (Skills/Fokus) - Menggunakan Card Component */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Deskripsi */}
+        <div>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-3">
+            Profil Singkat
+          </h2>
+          <p className="text-gray-600 leading-relaxed">
+            Saya seorang{" "}
+            <span className="font-semibold text-gray-800">Penulis Novel</span>{" "}
+            dengan fokus pada{" "}
+            <span className="font-semibold text-gray-800">
+              Penulisan Kreatif
+            </span>
+            . Berpengalaman menggunakan{" "}
+            <span className="font-semibold text-gray-800">
+              Picsart, Ibis Paint, Pinterest, Artflow
+            </span>{" "}
+            dan <span className="font-semibold text-gray-800">CapCut</span>{" "}
+            untuk membangun pengalaman membaca yang menarik, estetik, dan
+            mendalam.
+          </p>
+          <p className="mt-4 text-gray-500 italic">
+            "Membawa cerita hidup melalui kata-kata."
+          </p>
+        </div>
+      </section>
+
+      {/* Skills */}
+      <section className="max-w-5xl mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <AboutCard
             icon="🚀"
-            title="Frontend Mastery"
-            description="Keahlian dominan dalam membangun User Interface (UI) yang modern, cepat, dan terukur dengan **React.js**."
+            title="Picsart & Ibis Paint"
+            description="bikin foto/video jadi lebih estetik, kreatif, dan siap diposting di media sosial."
           />
-
           <AboutCard
             icon="🎨"
-            title="Desain Responsif & Estetik"
-            description="Menciptakan tata letak (layout) yang adaptif di berbagai perangkat menggunakan **Tailwind CSS** untuk hasil visual yang menawan."
+            title="Pinterest & Artflow"
+            description="menemukan, menyimpan, dan mengatur ide dalam bentuk gambar atau video biar gampang dicari lagi."
           />
-
           <AboutCard
             icon="💡"
-            title="Inovasi & Pembelajaran"
-            description="Selalu mencari teknologi dan pola desain terbaru untuk meningkatkan efisiensi dan kualitas proyek yang dikerjakan."
+            title="Capcut"
+            description="bikin video estetik dan siap upload ke TikTok, Instagram, atau YouTube dengan cepat."
           />
         </div>
       </section>
 
-      {/* Footer/CTA Sederhana */}
+      {/* CTA */}
       <footer className="mt-16 text-center px-4">
-        <p className="text-md text-gray-500">
-          Tertarik untuk berkolaborasi dalam proyek Anda? Mari kita wujudkan ide
-          Anda.
+        <p className="text-gray-600">
+          Tertarik untuk berkolaborasi? Mari wujudkan ide Anda.
         </p>
         <a
           href="#contact"
-          className="mt-3 inline-block bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-6 rounded-full transition duration-300 ease-in-out shadow-lg transform hover:scale-105"
+          className="mt-3 inline-block bg-gray-800 hover:bg-gray-900 text-white font-medium py-2 px-6 rounded-full transition"
         >
           Hubungi Saya
         </a>

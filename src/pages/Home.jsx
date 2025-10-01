@@ -20,12 +20,10 @@ function Home() {
         </h1>
         <p className="text-lg text-gray-700 leading-relaxed">
           Seorang{" "}
-          <span className="font-semibold text-pink-600">
-            Frontend Developer
-          </span>
-          yang suka membangun website dengan desain
+          <span className="font-semibold text-pink-600">Penulis Novel </span>
+          yang suka membangun cerita yang
           <span className="italic"> estetik</span>,
-          <span className="italic"> interaktif</span>, dan
+          <span className="italic"> keren</span>, dan
           <span className="italic"> menarik</span>.
         </p>
 
