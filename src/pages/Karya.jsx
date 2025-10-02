@@ -8,20 +8,20 @@ import karya6 from "../assets/karya6.jpeg";
 function Karya() {
   const projects = [
     {
-      title: "Portfolio Website",
-      desc: "Website personal dengan React & Tailwind.",
+      title: "the story of SERENA",
+      desc: '"mereka harus menderita sebelum gue mati"',
       img: karya4,
       link: "#",
     },
     {
-      title: "Landing Page",
-      desc: "Landing page startup modern.",
+      title: "LET'S PLAY",
+      desc: '"JANGAN MATI. BALASKAN DENDAMMU!"',
       img: karya5,
       link: "#",
     },
     {
-      title: "UI Design",
-      desc: "Desain UI estetik dengan Figma.",
+      title: "LET'S PLAY",
+      desc: "BLOOD",
       img: karya6,
       link: "#",
     },
