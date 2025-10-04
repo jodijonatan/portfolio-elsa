@@ -1,12 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import karya3 from "../assets/karya3.jpeg";
 import karya4 from "../assets/karya4.jpeg";
 import karya5 from "../assets/karya5.jpeg";
 import karya6 from "../assets/karya6.jpeg";
 
 function Karya() {
   const projects = [
+    {
+      title: "MALAM ULANG TAHUN",
+      desc: "ALL MUST DIE!",
+      img: karya3,
+      link: "#",
+    },
     {
       title: "the story of SERENA",
       desc: '"mereka harus menderita sebelum gue mati"',
