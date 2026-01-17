@@ -1,9 +1,11 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Karya from "./components/Karya";
-import Contact from "./components/Contact";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Karya from "./pages/Karya";
+import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
+import MusicList from "./pages/MusicList";
 
 function App() {
   return (
@@ -18,8 +20,14 @@ function App() {
       <section id="karya">
         <Karya />
       </section>
+      <section id="music">
+        <MusicList />
+      </section>
       <section id="contact">
         <Contact />
+      </section>
+      <section id="footer">
+        <Footer />
       </section>
     </div>
   );
